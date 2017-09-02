@@ -50,6 +50,10 @@ References section at the bottom as well as in pertinent code files.
 (Since this is not meant as a practical application and the work is still in progress,<br>
 I have not checked error handling yet; be careful and gentle when trying the app!)
 
+You do not see the effect of Bootstrap in the screen shots below; Bootstrap has been<br> 
+installed as a Maven dependency but the link to the CSS is commented out for now.<br> 
+More generally, I still have to find time to make the UI look reasonably appealing.      
+
 For step 4:<br>
 ![home](/mdimages/home.PNG)
 
