@@ -11,40 +11,41 @@ for the backend,
 * Tomcat
 
 for the front end,
-* Angular.js
+* AngularJS
 * Bootstrap (to be utilized later) 
 
 ### Prelimanary Remarks
  
 At least at this very early stage, my aim is not to make a practically useful<br> 
-application with a meaningful business logic; instead, I am exploring Angular.js<br> 
+application with a meaningful business logic; instead, I am exploring AngularJS<br> 
 for connecting the backend, which I have some--albeit limited--experience in, to the<br> 
-front end. So, my goal here is to set up a project architecture robust enough to build an<br> 
-actual application on later. Accordingly, the current code is deliberately simple.<br>
+front end. So, my goal here is to set up a project architecture robust enough to build<br> 
+an actual application on later. Accordingly, the current code is deliberately simple.<br>
 To give some motivation and a sense of direction, however, the application is<br>
 meant to be a very basic address book: you can add (POST) the name and email of<br> 
 a new contact and retrieve (GET) it by the name. (I have not added functionalities<br> 
 corresponding to PUT and DELETE yet.)
 
-I would also comment on the lack of tests in the current package. I strongly believe<br> 
-in test driven development, and normally use a Jersey based testing infrastructure for<br>
-backend code. However, given the simplicity of the code and unfamiliarity with testing<br>
-frameworks for Angular.js, at this point I have not added tests yet. (I used Fiddler for<br> 
+I would also comment on the lack of tests in the current package. I normally write unit<br> 
+tests in tandem with feature code, using a Jersey based testing infrastructure, for<br>
+backend. However, given the simplicity of the code and unfamiliarity with testing<br>
+frameworks for AngularJS, at this point I have not added tests yet. (I used Fiddler for<br> 
 backend code debugging.)
 
 I based this small project on several online sources, which are mentioned in the<br>
-Reference section at the bottom as well as in pertinent code files.       
+References section at the bottom as well as in pertinent code files.       
 
 ### How to run this tiny application (Refer to the screen shots below for illustration)
 
 1. Build the source code with Maven.
 1. Run Mongo, and make a new database called 'testdb'
-1. Run Tomcat with 'tomcat7:run' command (I myself do this from IntelliJ)
+1. Start Tomcat with 'tomcat7:run' command (I myself do this from IntelliJ)
 1. Open http://localhost:8080/siapp on a browser, to get to the home page
 1. Click 'New Contacts' link at the top
 1. Enter the name and email of a new contact and submit
 1. Click 'Contacts' link at the top
-1. Enter the name of the new contact you just made, to get the email address from the database
+1. Enter the name of the new contact you just made and then submit, to get<br> 
+   the email address from the database
 
 (Since this is not meant as a practical application and the work is still in progress,<br>
 I have not checked error handling yet; be careful and gentle when trying the app!)
@@ -56,10 +57,12 @@ For step 6:<br>
 ![newContact](/mdimages/newContact.PNG)
 
 For step 8:<br>
-![get1](/mdimages/get1.PNG)<br>
+![get1](/mdimages/get1.PNG)
+
+When submit the request, you get the email address from the database:<br> 
 ![get2](/mdimages/get2.PNG)
 
-Check the database collection:<br>
+Of course, the document is in the collection:<br>
 ![mongo](/mdimages/mongo.PNG)
 
 ### References
@@ -79,12 +82,14 @@ https://github.com/draptik/angulardemorestful
 
 https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/AngularJS_Basics.html
 
+https://stackoverflow.com/questions/24710503/how-do-i-post-urlencoded-form-data-with-http-in-angularjs<br>
+(in particular for a function for data encoding, which enables use of @FormParam annotation in the backend)
+
 ### Bibliography
 
 https://www3.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_HowTo.html<br>
 (More generally, the author of this site has a lot of thorough and insightful<br>
-tutorials at his home page; you should check:<br> 
-https://www3.ntu.edu.sg/home/ehchua/programming/index.html)
+tutorials at his home page; you should check: https://www3.ntu.edu.sg/home/ehchua/programming/index.html)
 
 
  
