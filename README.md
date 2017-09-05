@@ -2,7 +2,7 @@
 
 ### Technologies used:
 
-for the backend,
+for the back end,
 * Java (1.8.0_144)
 * Jersey
 * Maven (3.3.9)
@@ -18,7 +18,7 @@ for the front end,
  
 At least at this very early stage, my aim is not to make a practically useful<br> 
 application with a meaningful business logic; instead, I am exploring AngularJS<br> 
-for connecting the backend, which I have some--albeit limited--experience in, to the<br> 
+for connecting the back end, which I have some--albeit limited--experience in, to the<br> 
 front end. So, my goal here is to set up a project architecture robust enough to build<br> 
 an actual application on later. Accordingly, the current code is deliberately simple.<br>
 To give some motivation and a sense of direction, however, the application is<br>
@@ -28,7 +28,7 @@ corresponding to PUT and DELETE yet.)
 
 I would also comment on the lack of tests in the current package. I normally write unit<br> 
 tests in tandem with feature code, using a Jersey based testing infrastructure, for<br>
-backend. However, given the simplicity of the code and unfamiliarity with testing<br>
+back end. However, given the simplicity of the code and unfamiliarity with testing<br>
 frameworks for AngularJS, at this point I have not added tests yet. (I used Fiddler for<br> 
 backend code debugging.)
 
@@ -71,7 +71,7 @@ Of course, the document is in the collection:<br>
 
 ### References
 
-For the backend configuration:
+For the back end configuration:
 
 https://chiaboy.wordpress.com/2014/07/20/simple-jersey-example-with-intellij-idea-and-tomcat/<br>
 https://github.com/jersey/jersey/tree/2.4.1/examples/helloworld-spring-webapp  
