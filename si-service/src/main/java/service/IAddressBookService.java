@@ -1,9 +1,9 @@
-package siapp.service;
+package service;
 
-import siapp.domain.Contact;
+import domain.Contact;
 
 /**
- * Interface for service layer classes for the AddressBookController
+ * Interface for org.si.service layer classes for the AddressBookController
  */
 public interface IAddressBookService {
 

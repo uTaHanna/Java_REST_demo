@@ -1,6 +1,6 @@
-package siapp.repository;
+package repository;
 
-import siapp.domain.Contact;
+import domain.Contact;
 
 /**
  * Interface for repository layer classes for the AddressBookController

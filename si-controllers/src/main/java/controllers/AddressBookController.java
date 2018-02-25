@@ -1,9 +1,9 @@
-package siapp.controllers;
+package controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import siapp.domain.Contact;
-import siapp.service.IAddressBookService;
+import domain.Contact;
+import service.IAddressBookService;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;

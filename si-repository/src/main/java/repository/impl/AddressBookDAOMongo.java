@@ -1,4 +1,4 @@
-package siapp.repository.impl;
+package repository.impl;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,12 +8,12 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Repository;
-import siapp.domain.Contact;
-import siapp.repository.AddressBookDAO;
+import domain.Contact;
+import repository.AddressBookDAO;
 
 import java.util.UUID;
 
-@Repository
+//@Repository
 public class AddressBookDAOMongo implements AddressBookDAO{
 
     private static final Logger LOGGER = LoggerFactory.getLogger(AddressBookDAOMongo.class);

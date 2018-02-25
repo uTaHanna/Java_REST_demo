@@ -81,7 +81,7 @@ For the front end set up:
 http://sivalabs.in/2014/09/angularjs-tutorial-getting-started-with-angularjs/<br>
 https://github.com/sivaprasadreddy/proof-of-concepts/tree/master/angularjs-samples
 
-http://draptik.github.io/blog/2013/07/13/angularjs-example-using-a-java-restful-web-service/<br>
+http://draptik.github.io/blog/2013/07/13/angularjs-example-using-a-java-restful-web-org.si.service/<br>
 https://github.com/draptik/angulardemorestful
 
 https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/AngularJS_Basics.html

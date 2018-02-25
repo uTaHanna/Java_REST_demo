@@ -1,23 +1,23 @@
-package siapp.service.impl;
+package service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import siapp.domain.Contact;
-import siapp.repository.AddressBookDAO;
-import siapp.service.IAddressBookService;
+import domain.Contact;
+import repository.AddressBookDAO;
+import service.IAddressBookService;
 
-@Service
+//@Service
 public class AddressBookService implements IAddressBookService{
 
     @Autowired
-    private AddressBookDAO addressBookDAO;
+    private AddressBookDAO addressBookDAOMongo;
 
     /**
      * {@inheritDoc}
      */
     public Contact getContact(String name){
 
-        return addressBookDAO.getContact(name);
+        return addressBookDAOMongo.getContact(name);
     }
 
     /**
@@ -25,6 +25,6 @@ public class AddressBookService implements IAddressBookService{
      */
     public void postContact(String name, String email){
 
-        addressBookDAO.postContact(name, email);
+        addressBookDAOMongo.postContact(name, email);
     }
 }
