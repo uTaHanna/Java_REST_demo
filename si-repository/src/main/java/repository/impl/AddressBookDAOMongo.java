@@ -13,7 +13,7 @@ import repository.AddressBookDAO;
 
 import java.util.UUID;
 
-//@Repository
+@Repository
 public class AddressBookDAOMongo implements AddressBookDAO{
 
     private static final Logger LOGGER = LoggerFactory.getLogger(AddressBookDAOMongo.class);

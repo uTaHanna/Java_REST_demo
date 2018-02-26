@@ -6,7 +6,7 @@ import domain.Contact;
 import repository.AddressBookDAO;
 import service.IAddressBookService;
 
-//@Service
+@Service
 public class AddressBookService implements IAddressBookService{
 
     @Autowired

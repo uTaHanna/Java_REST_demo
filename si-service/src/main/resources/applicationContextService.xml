@@ -8,10 +8,7 @@
                            http://www.springframework.org/schema/context
                            http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!--<context:annotation-config />-->
+    <context:annotation-config />
 
-    <!--<context:component-scan base-package="repository, service" />-->
-
-    <bean id="addressBookDAOMongo" class="repository.impl.AddressBookDAOMongo" />
-    <bean id="addressBookService" class="service.impl.AddressBookService" />
+    <context:component-scan base-package="repository" />
 </beans>

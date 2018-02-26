@@ -6,7 +6,7 @@ app.controller('getCtrl', [ '$scope', '$http', function($scope, $http) {
 
         $http({
             method: 'GET',
-            url: 'http://localhost:8080/siapp/rest/addressbook/' + $scope.contactName,
+            url: 'http://localhost:8080/si-controllers/rest/addressbook/' + $scope.contactName,
             data:{},
             headers: {}
         }).then(function success(response){
@@ -42,7 +42,7 @@ app.controller('postCtrl', [ '$scope', '$http', function($scope, $http) {
 
         $http({
             method: 'POST',
-            url: 'http://localhost:8080/siapp/rest/addressbook/newcontact',
+            url: 'http://localhost:8080/si-controllers/rest/addressbook/newcontact',
             headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'},
             transformRequest: function(params){
 
