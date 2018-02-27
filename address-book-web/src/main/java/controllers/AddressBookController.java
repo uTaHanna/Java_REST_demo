@@ -10,7 +10,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 @Controller
-@Path("/addressbook")
+@Path("/address-book")
 @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
 @Produces(MediaType.APPLICATION_JSON)
 public class AddressBookController {
@@ -28,7 +28,7 @@ public class AddressBookController {
     }
 
     @POST
-    @Path("/newcontact")
+    @Path("/new-contact")
     public Response postContact(@FormParam("name") String name,
                                 @FormParam("email") String email){
 

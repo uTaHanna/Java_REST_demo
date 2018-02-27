@@ -1,4 +1,4 @@
-var app = angular.module('siApp', ['ngRoute']);
+var app = angular.module('addressBookWeb', ['ngRoute']);
 
 app.config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider){
 
@@ -10,7 +10,7 @@ app.config(['$locationProvider', '$routeProvider', function($locationProvider, $
             templateUrl: "views/contacts.html",
             controller: 'getCtrl'
         })
-        .when("/newContacts", {
+        .when("/new-contacts", {
             templateUrl: "views/newContacts.html",
             controller: 'postCtrl'
         })
