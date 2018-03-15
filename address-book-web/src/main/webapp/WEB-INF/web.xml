@@ -30,7 +30,7 @@
 
   <servlet-mapping>
     <servlet-name>AddressBookWeb</servlet-name>
-    <url-pattern>/rest/*</url-pattern>
+    <url-pattern>/address/*</url-pattern>
   </servlet-mapping>
 
   <context-param>

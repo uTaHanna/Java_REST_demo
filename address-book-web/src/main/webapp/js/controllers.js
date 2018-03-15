@@ -6,7 +6,7 @@ app.controller('getCtrl', [ '$scope', '$http', function($scope, $http) {
 
         $http({
             method: 'GET',
-            url: 'http://localhost:8080/address-book-web/rest/address-book/' + $scope.contactName,
+            url: 'http://localhost:8080/address-book-web/address/contact/' + $scope.contactName,
             data:{},
             headers: {}
         }).then(function success(response){
@@ -42,7 +42,7 @@ app.controller('postCtrl', [ '$scope', '$http', function($scope, $http) {
 
         $http({
             method: 'POST',
-            url: 'http://localhost:8080/address-book-web/rest/address-book/new-contact',
+            url: 'http://localhost:8080/address-book-web/address/new-contact',
             headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'},
             transformRequest: function(params){
 

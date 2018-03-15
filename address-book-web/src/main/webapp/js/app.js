@@ -6,12 +6,12 @@ app.config(['$locationProvider', '$routeProvider', function($locationProvider, $
         .when("/", {
             templateUrl: "views/home.html"
         })
-        .when("/contacts", {
-            templateUrl: "views/contacts.html",
+        .when("/address/contact", {
+            templateUrl: "views/contact.html",
             controller: 'getCtrl'
         })
-        .when("/new-contacts", {
-            templateUrl: "views/newContacts.html",
+        .when("/address/new-contact", {
+            templateUrl: "views/newContact.html",
             controller: 'postCtrl'
         })
         .otherwise("/");

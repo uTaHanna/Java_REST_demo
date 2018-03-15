@@ -39,7 +39,9 @@ References section at the bottom as well as in the pertinent files.
 
 1. In the project root directory, build the source code with Maven by "mvn clean install".
 1. Run Mongo, and make a new database called "testdb"
-1. Start Tomcat with "tomcat7:run" command (I myself do this from IntelliJ)
+1. In the address-book-web directory, do "mvn tomcat7:run" to start the application<br>
+   (If using IntelliJ, in Edit Configurations add your file path to the address-book-web<br>
+    directory, enter "tomcat7:run" in the "command line" box, save, and then click "Run".) 
 1. Open http://localhost:8080/address-book-web on a browser, to get to the home page
 1. Click 'New Contacts' link at the top
 1. Enter the name and email of a new contact and submit
