@@ -35,19 +35,19 @@ References section at the bottom as well as in the pertinent files.
 
 ### How to Run the Application
 
-(Refer to the screen shots below for illustration) 
+(Refer to the screen shots below for illustration.) 
 
 1. In the project root directory, build the source code with Maven by "mvn clean install".
-1. Run Mongo, and make a new database called "testdb"
-1. In the address-book-web directory, do "mvn tomcat7:run" to start the application<br>
-   (If using IntelliJ, in Edit Configurations add your file path to the address-book-web<br>
-    directory, enter "tomcat7:run" in the "command line" box, save, and then click "Run".) 
-1. Open http://localhost:8080/address-book-web on a browser, to get to the home page
-1. Click 'New Contacts' link at the top
-1. Enter the name and email of a new contact and submit
-1. Click 'Contacts' link at the top
+1. Run Mongo, and make a new database called "testdb".
+1. In the address-book-web directory, do "mvn tomcat7:run" to start the application.<br>
+   (If using IntelliJ, in Edit Configurations specify your file path to the address-book-web<br>
+    directory, enter "tomcat7:run" in the "command line" box, save, and then click Run.) 
+1. Open http://localhost:8080/address-book-web on a browser, to get to the home page.
+1. Click New Contacts link at the top.
+1. Enter the name and email of a new contact and submit.
+1. Click Contacts link at the top.
 1. Enter the name of the new contact you just made and then submit, to get<br> 
-   the email address from the database
+   the email address from the database.
 
 (Since this is not meant as a practical application and the work is still in progress,<br>
 I have not checked error handling yet; be careful and gentle when trying the app!)
@@ -93,9 +93,18 @@ https://stackoverflow.com/questions/24710503/how-do-i-post-urlencoded-form-data-
 
 ### Bibliography
 
+For basic understanding of Java web applications and Tomcat:
+ 
 https://www3.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_HowTo.html<br>
 (More generally, the author of this site has a lot of thorough and insightful<br>
-tutorials at his home page; you should check: https://www3.ntu.edu.sg/home/ehchua/programming/index.html)
+tutorials at his home page; check: https://www3.ntu.edu.sg/home/ehchua/programming/index.html)
+ 
+For use of filters:<br>
+
+https://www.ibm.com/support/knowledgecenter/en/SSAW57_8.0.0/com.ibm.websphere.nd.doc/info/ae/ae/twbs_jaxrs_configwebxml_jrsfilters.html
+
+
+  
 
 
  
